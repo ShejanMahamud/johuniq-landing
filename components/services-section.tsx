@@ -7,12 +7,12 @@ import { Cloud, CodeXml, GitBranch, Palette } from "lucide-react"
 export function ServicesSection() {
   const services = [
     {
-      title: "Custom Software Development",
+      title: "Web Development",
       icon: <CodeXml className="w-12 h-12 text-white" />,
       color: "bg-[#E0B0FF]", // Light Purple
     },
     {
-      title: "Open Source Tools",
+      title: "App Development",
       icon: <GitBranch className="w-12 h-12 text-white" />,
       color: "bg-[#00D2D3]", // Teal
     },

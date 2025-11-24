@@ -2,11 +2,11 @@
 
 export function ClientLogos() {
   const logos = [
-    { name: "TechFlow", src: "/logos/techflow.svg" },
-    { name: "DataPulse", src: "/logos/datapulse.svg" },
-    { name: "CloudNest", src: "/logos/cloudnest.svg" },
-    { name: "AppForge", src: "/logos/appforge.svg" },
-    { name: "CodeCraft", src: "/logos/codecraft.svg" },
+    { name: "TechFlow", src: "/techflow.svg" },
+    { name: "DataPulse", src: "/datapulse.svg" },
+    { name: "CloudNest", src: "/cloudnest.svg" },
+    { name: "AppForge", src: "/appforge.svg" },
+    { name: "CodeCraft", src: "/codecraft.svg" },
   ]
 
   return (
