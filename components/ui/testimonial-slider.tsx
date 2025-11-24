@@ -1,9 +1,9 @@
 "use client"
 
-import { useState, useCallback } from "react"
-import { motion, AnimatePresence } from "framer-motion"
-import { ChevronLeft, ChevronRight, Star, Quote } from "lucide-react"
 import { cn } from "@/lib/utils"
+import { AnimatePresence, motion } from "framer-motion"
+import { ChevronLeft, ChevronRight, Quote, Star } from "lucide-react"
+import { useCallback, useState } from "react"
 
 // Defines the data structure for a single testimonial
 export interface Testimonial {
@@ -59,12 +59,12 @@ export const TestimonialSlider = ({ testimonials, className }: TestimonialSlider
     visible: {
       x: "0%",
       opacity: 1,
-      transition: { type: "spring", stiffness: 260, damping: 30 },
+      transition: { type: "spring" as const, stiffness: 260, damping: 30 },
     },
     exit: (direction: number) => ({
       x: direction < 0 ? "100%" : "-100%",
       opacity: 0,
-      transition: { type: "spring", stiffness: 260, damping: 30 },
+      transition: { type: "spring" as const, stiffness: 260, damping: 30 },
     }),
   }
 

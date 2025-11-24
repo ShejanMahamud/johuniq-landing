@@ -19,7 +19,7 @@ const siteConfig = {
   name: "Johuniq",
   title: "Johuniq - Custom Software Development & Open Source Solutions",
   description: "Transform your ideas into impactful software. We build custom software, open-source tools, and scalable solutions for startups and enterprises.",
-  url: "https://johuniq.com",
+  url: "https://johuniq.tech",
   keywords: ["custom software development", "software agency", "MVP development", "open source", "web development", "mobile app development", "SaaS development", "enterprise software"],
 }
 

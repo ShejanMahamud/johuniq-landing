@@ -50,11 +50,11 @@ export function Footer() {
             <ul className="space-y-3">
               <li>
                 <a
-                  href="mailto:hello@johuniq.com"
+                  href="mailto:hello@johuniq.tech"
                   className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
                 >
                   <IconMail className="w-4 h-4" />
-                  hello@johuniq.com
+                  hello@johuniq.tech
                 </a>
               </li>
               <li>

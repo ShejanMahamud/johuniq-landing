@@ -1,20 +1,36 @@
 export function ClientLogos() {
   const logos = [
-    { name: "logoipsum-254", src: "/logos/logoipsum-254.svg" },
-    { name: "logoipsum-257", src: "/logos/logoipsum-257.svg" },
-    { name: "logoipsum-251", src: "/logos/logoipsum-251.svg" },
-    { name: "logoipsum-242", src: "/logos/logoipsum-242.svg" },
-    { name: "logoipsum-258", src: "/logos/logoipsum-258.svg" },
+    { name: "TechFlow", src: "/logos/techflow.svg" },
+    { name: "DataPulse", src: "/logos/datapulse.svg" },
+    { name: "CloudNest", src: "/logos/cloudnest.svg" },
+    { name: "AppForge", src: "/logos/appforge.svg" },
+    { name: "CodeCraft", src: "/logos/codecraft.svg" },
   ]
 
   return (
     <section className="py-12 px-6 border-t border-border">
       <div className="container mx-auto">
         <h2 className="font-serif text-2xl md:text-3xl text-center mb-8 text-foreground/60">Trusted By</h2>
-        <div className="flex items-center justify-center gap-12 flex-wrap opacity-40 grayscale">
+        <div className="flex items-center justify-center gap-12 flex-wrap opacity-40 grayscale hover:opacity-60 transition-opacity">
           {logos.map((logo) => (
             <div key={logo.name} className="flex items-center justify-center h-10">
-              <img src={logo.src || "/placeholder.svg"} alt={logo.name} className="h-full w-auto" />
+              <img 
+                src={logo.src || "/placeholder.svg"} 
+                alt={`${logo.name} logo`} 
+                className="h-full w-auto object-contain" 
+                onError={(e) => {
+                  // Fallback to text if image fails to load
+                  const target = e.target as HTMLImageElement;
+                  target.style.display = 'none';
+                  const parent = target.parentElement;
+                  if (parent && !parent.querySelector('.logo-text')) {
+                    const span = document.createElement('span');
+                    span.className = 'logo-text text-2xl font-bold text-foreground/60';
+                    span.textContent = logo.name;
+                    parent.appendChild(span);
+                  }
+                }}
+              />
             </div>
           ))}
         </div>

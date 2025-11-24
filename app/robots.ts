@@ -9,6 +9,6 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ['/api/', '/admin/'],
       },
     ],
-    sitemap: 'https://johuniq.com/sitemap.xml',
+    sitemap: 'https://johuniq.tech/sitemap.xml',
   }
 }
