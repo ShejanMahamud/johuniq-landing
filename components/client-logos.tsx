@@ -1,3 +1,5 @@
+"use client"
+
 export function ClientLogos() {
   const logos = [
     { name: "TechFlow", src: "/logos/techflow.svg" },
